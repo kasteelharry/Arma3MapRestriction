@@ -1,0 +1,8 @@
+/*
+	@Author: @kasteelharry
+	@filename: description.ext
+	@file_edit: 15/20/2019
+*/
+
+//Neccesary for the Map restrictor code to run on MP.
+disableChannels[] = {{0,false,true},{1,true,true},{2,true,true},{3,true,true},{4,true,true},{5,true,true},{6,false,true}};
