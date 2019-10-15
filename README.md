@@ -1,4 +1,4 @@
-# Arma3MapRestriction
+# Arma 3 Map Restriction
 This script and files make it possible for the server to restrict who can place markers down/draw on the map depending on which group is allowed to draw on it. The script forces players to place a marker on the map the first time they join the mission. This makes it able to create a list of Direct Play ID without having them in scientific notation (what arma usually does when getting the Direct Play ID with onplayerconnected). 
 
 When the "DisableMapRestrictor" global variable is set to true, the script will not start delete markers untill the value is set to false. To stop removing markers, change the value back to false.
@@ -46,7 +46,7 @@ This script gets run on the player joining the server on it's own computer.
 //Runs the script that makes it possible to get the players id raw and not get a rounded version
 execVM "scripts\MapRestrictorIDGet.sqf";
 ```
-#### description.exe
+#### description.ext:
 Change these options to make sure that no markers gets placed in the non-server side channels. Not neccesary in singleplayer
 ```
 //Neccesary for the Map restrictor code to run on MP.
@@ -66,13 +66,13 @@ missionNameSpace setVariable ["DisableMapRestrictor", true, true];
 ```
 
 #### Change whitelisted group:
-Run this also global or server:
+Run this also global or server.
 ```
 missionNameSpace setVariable ["WhitelistedGroup", "NAME OF GROUP", true];
 ```
 
 #### Debugging:
-To debug the script run the following lines of code:
+To debug the script run the following lines of code global:
 ```
 //from top to bottom: ID's that are whitelisted, names of the ID's, group that is whitelisted and the state of the cleaning process 
 diag_log (missionNameSpace getVariable "WhiteListedIDs");
@@ -82,7 +82,7 @@ diag_log (missionNameSpace getVariable "");
 diag_log (missionNameSpace getVariable "WhitelistedGroup");
 diag_log (missionNameSpace getVariable "");
 ```
-This will paste the list of ID's, Names and group that are whitelisted.
+This will paste the list of ID's, Names and group that are whitelisted in your log and in the server log.
 
 ## Known bugs:
 - Only markers in the global channel are effected.
