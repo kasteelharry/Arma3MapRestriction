@@ -2,6 +2,7 @@
 
 //Runs the script from mission start, can also be run through debug console.
 //Make it active by using 'missionNamespace setVariable ["DisableMapRestrictor", false, true];'
+//Needs to be called on 'initPlayerLocal.sqf' to have markers in local channels to be removed
 execVM "scripts\DrawMapRestrictor.sqf";
 
 //Global variable used in the script:
