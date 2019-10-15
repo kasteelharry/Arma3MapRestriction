@@ -27,10 +27,6 @@ fnc_MapPopUp = {
 	//Shows text on screen informing players what to do, even a monkey could follow these instructions
 	titleText ["<t color='#ff0000' size='5'>Please place a marker on the map!</t><br/><t size='3'>It's the only way to get out of this screen, even I the Zeus can't get you out...</t><br/>", "PLAIN", -1, true, true];
 	
-	//Saves the state of the Restrictor script enabler/disabler in a global var and pauses the script.
-	oldState = (missionNamespace getVariable "DisableMapRestrictor");
-	missionNamespace setVariable ["DisableMapRestrictor", true, true];
-	
 	//makes sure that the map is open on missionStart
 	while {!visibleMap} do {
 		openMap [true, true]
@@ -112,9 +108,6 @@ fnc_ButtonClicked = {
 
 					//Removes the handler when the mouse doubleclicks on the map so markers can be created after this by the player.
 					((findDisplay 12) displayCtrl 51) ctrlRemoveAllEventHandlers "MouseButtonDblClick";
-
-					//Returns the active restrictor script back to its orginal state
-					missionNamespace setVariable ["DisableMapRestrictor", OldState, true];
 				};
 			}];
 		};
