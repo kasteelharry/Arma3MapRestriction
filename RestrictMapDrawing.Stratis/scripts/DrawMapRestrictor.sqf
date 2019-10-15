@@ -40,7 +40,7 @@ fn_DeleteBlacklistMarkers = {
 		if (toString _a == "_USER_DEFINED #") then //makes sure that the marker is userplaced
 		{
 			_y = _del splitString "#/ "; //splits the values so the ID can be compared
-			hint str(_y);
+			
 			_selectedMarkerid = _y select 1 ;
 
 			//_selectedMarkerid = parseNumber _selectedMarkerid;
