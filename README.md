@@ -6,7 +6,7 @@ When the "DisableMapRestrictor" global variable is set to true, the script will 
 ## How to use:
 1. Copy the Repository or download the zip.
 2. Copy the scripts folder to your mission folder.
-3. Copy the 'intiServer.sqf', the 'Description.exe' and the 'initPlayerLocal.sqf' files to your mission folder.
+3. Copy the 'intiServer.sqf' and the 'initPlayerLocal.sqf' files to your mission folder.
 4. If the files already exist then paste the codes, found in **Custom installation**, in the correct files.
 5. Run your mission in a dedicated enviroment (should work fine on singleplayer aswell).
 
@@ -45,12 +45,6 @@ This script gets run on the player joining the server on it's own computer.
 ```
 //Runs the script that makes it possible to get the players id raw and not get a rounded version
 execVM "scripts\MapRestrictorIDGet.sqf";
-```
-#### description.ext:
-Change these options to make sure that no markers gets placed in the non-server side channels. Not neccesary in singleplayer
-```
-//Neccesary for the Map restrictor code to run on MP.
-disableChannels[] = {{0,false,true},{1,true,true},{2,true,true},{3,true,true},{4,true,true},{5,true,true},{6,false,true}};
 ```
 
 ## Useful code
