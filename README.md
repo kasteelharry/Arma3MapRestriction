@@ -91,3 +91,4 @@ This will paste the list of ID's, Names and group that are whitelisted in your l
 ## Upcoming Features:
 - No need for players to place a marker to grab their Direct Play ID. (Somewhere after arma 1.96 update)
 - Instead of deleting makers, players can't place markers in the first place.
+- Template mission on Stratis
