@@ -1,4 +1,4 @@
-# Arma 3 Map Restriction
+# Arma 3 Map Restriction Dev Branch, Bugs to be expected
 This script and files make it possible for the server to restrict who can place markers down/draw on the map depending on which group is allowed to draw on it. The script forces players to place a marker on the map the first time they join the mission. This makes it able to create a list of Direct Play ID without having them in scientific notation (what arma usually does when getting the Direct Play ID with onplayerconnected). 
 
 When the "DisableMapRestrictor" global variable is set to true, the script will not start delete markers untill the value is set to false. To stop removing markers, change the value back to false.
