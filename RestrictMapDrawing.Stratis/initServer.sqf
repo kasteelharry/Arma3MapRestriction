@@ -5,7 +5,8 @@
 //Needs to be called on 'initPlayerLocal.sqf' to have markers in local channels to be removed
 execVM "scripts\DrawMapRestrictor.sqf";
 
-_AllowedToDrawGroup = ["GroupName1", "GroupName2"];
+//Set your groupnames here.
+_AllowedToDrawGroup = ["GroupName1", "GroupName2", "etc..."];
 //Global variable used in the script:
 missionNamespace setVariable ["WhiteListedIDs", [], true];//Direct Play ID's in here
 missionNamespace setVariable ["DisableMapRestrictor", true, true];//Start or stop cleaning the map
