@@ -18,7 +18,7 @@ fn_setMapWhitelist = { //sets the whitelist of players who are allowed to draw o
 	{
 
 		
-    	if (groupId (group _x) == _WGroup) then //check if the player is in the predefine hardcoded group
+    	if (groupId (group _x) in _WGroup) then //check if the player is in the predefine hardcoded group
 		{
 			//If player in Group add them to the id and name array
 			_id pushBack (missionNameSpace getVariable (name _x));
