@@ -1,6 +1,12 @@
-//Calls the ID getter on load
-execVM "scripts\MapRestrictorIDGet.sqf";
+//These lines need to be placed in initPlayerLocal.sqf.
 
-//Also tunning the script due to the local channels. Might impact performance.
-//Will Delete markers in all channels due to this, so removes the previous need of having to disable them in 'description.ext'.
+
+////////////////////////////////////////
+////                                ////
+////        DO NOT CHANGE!          ////
+////                                ////
+////////////////////////////////////////
+
+//Calls the ID getter on load and then start deleting markers in the local channels.
+execVM "scripts\MapRestrictorIDGet.sqf";
 execVM "scripts\DrawMapRestrictor.sqf";
