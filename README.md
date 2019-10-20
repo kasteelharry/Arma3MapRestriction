@@ -81,8 +81,8 @@ This will paste the list of ID's, Names and group that are whitelisted in your l
 ## Known bugs:
 - Only markers in the global channel are effected.
 - If players can't place markers on the map they are stuck in the map.
+- Running this script in a singleplayer eniroment will result in the game to crash.
 
 ## Upcoming Features:
 - No need for players to place a marker to grab their Direct Play ID. (Somewhere after arma 1.96 update)
 - Instead of deleting makers, players can't place markers in the first place.
-- Template mission on Stratis
