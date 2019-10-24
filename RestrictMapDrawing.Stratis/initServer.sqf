@@ -27,8 +27,7 @@ missionNamespace setVariable ["WhiteListedIDs", [], true];
 missionNamespace setVariable ["DisableMapRestrictor", true, true];
 missionNameSpace setVariable ["WhitelistedGroup",_AllowedToDrawGroup, true];
 
-
-execVM "scripts\DrawMapRestrictor.sqf";
+[] spawn kast_fnc_KeepMapClean;
 
 /*
 Will work from version 1.96 and onwards:
@@ -37,6 +36,6 @@ onPlayerConnected
     missionNamespace setVariable [_name, _idstr, true];
 };
 
-Removes the need for the @MapRestrictorIDGet.sqf script due to it getting the Direct Play ID on connecting to the server
+Removes the need for the @fn_GetDirectPlayID.sqf function due to it getting the Direct Play ID on connecting to the server
 
 */

@@ -63,7 +63,6 @@ while {true} do{
     //runs the functions and sleeps as to not overload the server/client
 		call fn_setMapWhitelist;
 		call fn_DeleteBlacklistMarkers;
-		sleep 2;
 	};
 	sleep 2;
 
