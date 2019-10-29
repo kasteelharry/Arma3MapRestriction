@@ -7,7 +7,6 @@ class CfgFunctions
 		class functions
 		{
 			file = "functions";
-			class GetDirectPlayID;
 			class KeepMapClean;
 		};
 	};
