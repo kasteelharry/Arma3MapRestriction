@@ -30,12 +30,9 @@ missionNameSpace setVariable ["WhitelistedGroup",_AllowedToDrawGroup, true];
 [] spawn kast_fnc_KeepMapClean;
 
 /*
-Will work from version 1.96 and onwards:
+    Will work from version 1.96 and onwards:
+*/ 
 onPlayerConnected 
 {
     missionNamespace setVariable [_name, _idstr, true];
 };
-
-Removes the need for the @fn_GetDirectPlayID.sqf function due to it getting the Direct Play ID on connecting to the server
-
-*/
